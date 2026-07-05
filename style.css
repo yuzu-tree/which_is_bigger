@@ -53,4 +53,11 @@ body {
     text-align: left;
 }
 
+.main-title {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
 #result-feedback { font-size: 1.2rem; }
