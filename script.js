@@ -1,6 +1,15 @@
 let currentIdx = 0;
 let score = 0;
 
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
+shuffleArray(quizData);
+
 function renderMath() {
     // MathJaxに数式を再レンダリングさせる
     if (window.MathJax) {
