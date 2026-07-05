@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Math Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- MathJaxの読み込み (数式表示用) -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="quiz-area">
+            <div class="choices">
+                <button id="btn-left" class="choice-btn"></button>
+                <div class="vs">OR</div>
+                <button id="btn-right" class="choice-btn"></button>
+            </div>
+
+            <button id="btn-hint" class="sub-btn">ヒント</button>
+            <p id="hint-text" class="hidden"></p>
+
+            <div id="result-area" class="hidden">
+                <h2 id="result-feedback"></h2>
+                <div class="explanation-box">
+                    <p id="explanation-text"></p>
+                </div>
+                <button id="btn-next" class="sub-btn">次の問題</button>
+            </div>
+        </div>
+
+        <div id="final-result" class="hidden">
+            <h2>終了！</h2>
+            <p id="score-text"></p>
+            <button onclick="location.reload()" class="sub-btn">リトライ</button>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
